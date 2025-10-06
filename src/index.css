@@ -7,7 +7,7 @@
 /* ==================== */
 :root, .dark {
   /* Core colours */
-  --background: 0 0% 0%;          /* Black background */
+  --background: 0 0% 10%;          /* Black background */
   --foreground: 0 0% 100%;        /* White text */
   --primary: 0 74% 30%;           /* Dark red */
   --primary-foreground: 0 0% 100%; /* White text on primary */
@@ -26,9 +26,8 @@
 /* ==================== */
 .light {
   /* Core colours */
-  --background: 0 0% 95%;         /* Light gray background */
+  --background: 0 0% 90%;         /* Light gray background */
   --foreground: 0 0% 0%;          /* Black text */
-  --primary: 0 74% 60%;           /* Light red */
   --primary-foreground: 0 0% 100%; /* White text on primary */
   --secondary: 10 80% 50%;        /* Orangey red */
   --secondary-foreground: 0 0% 100%; /* White text on secondary */

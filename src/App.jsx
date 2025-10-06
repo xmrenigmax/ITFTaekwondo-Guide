@@ -5,6 +5,7 @@ import { Patterns } from './pages/Patterns'
 import { Terminology } from './pages/Terminology'
 import { NotFound } from './pages/NotFound'
 import { Navbar } from './components/Navbar'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/terminology" element={<Terminology/>} />
             <Route path="*" element={<NotFound/>} />
           </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
