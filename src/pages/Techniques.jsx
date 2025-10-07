@@ -1,56 +1,69 @@
 // pages/Techniques.jsx
+import { useState } from 'react'
+import { TechniquesHero } from '../components/TechniquesPage/TechniquesHero'
+import { CategoryNavigation } from '../components/TechniquesPage/CategoryNavigation'
+import { TechniquesOverview } from '../components/TechniquesPage/TechniquesOverview'
+import { StancesCategory } from '../components/TechniquesPage/categories/StancesCategory'
+import { StrikesCategory } from '../components/TechniquesPage/categories/StrikesCategory'
+import { BlocksCategory } from '../components/TechniquesPage/categories/BlocksCategory'
+import { KicksCategory } from '../components/TechniquesPage/categories/KicksCategory'
+import { ThrustsCategory } from '../components/TechniquesPage/categories/ThrustsCategory'
+import { PunchesCategory } from '../components/TechniquesPage/categories/PunchesCategory'
+
 export const Techniques = () => {
+  const [currentCategory, setCurrentCategory] = useState('overview')
+
+  // Category configuration
+  const categories = [
+    { id: 'overview', name: 'Overview' },
+    { id: 'stances', name: 'Stances' },
+    { id: 'strikes', name: 'Strikes'},
+    { id: 'blocks', name: 'Blocks'},
+    { id: 'kicks', name: 'Kicks'},
+    { id: 'thrusts', name: 'Thrusts'},
+    { id: 'punches', name: 'Punches' }
+  ]
+
+  // Render current category component
+  const renderCurrentCategory = () => {
+    switch (currentCategory) {
+      case 'overview':
+        return <TechniquesOverview onCategorySelect={setCurrentCategory} />
+      case 'stances':
+        return <StancesCategory />
+      case 'strikes':
+        return <StrikesCategory />
+      case 'blocks':
+        return <BlocksCategory />
+      case 'kicks':
+        return <KicksCategory />
+      case 'thrusts':
+        return <ThrustsCategory />
+      case 'punches':
+        return <PunchesCategory />
+      default:
+        return <TechniquesOverview onCategorySelect={setCurrentCategory} />
+    }
+  }
+
   return (
-    <div className="pt-16 min-h-screen"> {/* pt-16 to account for fixed navbar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-4xl font-bold text-foreground mb-8">ITF Techniques</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="hover-card p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-foreground mb-3">Stances (Sogi)</h3>
-            <p className="text-foreground/80 mb-4">Basic stances and their applications in patterns and sparring</p>
-            <ul className="text-foreground/70 text-sm space-y-1">
-              <li>• Walking Stance (Gunnun Sogi)</li>
-              <li>• Sitting Stance (Annun Sogi)</li>
-              <li>• L-Stance (Niunja Sogi)</li>
-              <li>• Fixed Stance (Gojung Sogi)</li>
-            </ul>
-          </div>
-          
-          <div className="hover-card p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-foreground mb-3">Blocks (Makgi)</h3>
-            <p className="text-foreground/80 mb-4">Various blocking techniques for defense</p>
-            <ul className="text-foreground/70 text-sm space-y-1">
-              <li>• Low Block (Najunde Makgi)</li>
-              <li>• Middle Block (Kaunde Makgi)</li>
-              <li>• High Block (Nopunde Makgi)</li>
-              <li>• Knifehand Block (Sonnal Makgi)</li>
-            </ul>
-          </div>
-          
-          <div className="hover-card p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-foreground mb-3">Strikes (Jireugi)</h3>
-            <p className="text-foreground/80 mb-4">Hand and arm striking techniques</p>
-            <ul className="text-foreground/70 text-sm space-y-1">
-              <li>• Straight Punch (Jireugi)</li>
-              <li>• Reverse Punch (Bandae Jireugi)</li>
-              <li>• Knifehand Strike (Sonnal Taerigi)</li>
-              <li>• Ridgehand Strike (Sonnal-deung Taerigi)</li>
-            </ul>
-          </div>
-          
-          <div className="hover-card p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-foreground mb-3">Kicks (Chagi)</h3>
-            <p className="text-foreground/80 mb-4">Fundamental kicking techniques</p>
-            <ul className="text-foreground/70 text-sm space-y-1">
-              <li>• Front Kick (Ap Chagi)</li>
-              <li>• Side Kick (Yop Chagi)</li>
-              <li>• Turning Kick (Dollyo Chagi)</li>
-              <li>• Back Kick (Dwit Chagi)</li>
-            </ul>
-          </div>
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <TechniquesHero />
+      
+      {/* Sticky Category Navigation */}
+      <CategoryNavigation
+        categories={categories}
+        currentCategory={currentCategory}
+        onCategoryChange={setCurrentCategory}
+      />
+      
+      {/* Dynamic Content Area with Smooth Transitions */}
+      <main className="transition-all duration-300 ease-in-out">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {renderCurrentCategory()}
         </div>
-      </div>
+      </main>
     </div>
-  );
-};
+  )
+}
