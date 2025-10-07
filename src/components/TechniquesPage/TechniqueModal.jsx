@@ -1,4 +1,5 @@
-// src/components/techniques/TechniqueModal.jsx
+
+// TechniqueModal [shows detailed info about a technique in a modal]
 export const TechniqueModal = ({ technique, isOpen, onClose }) => {
   if (!isOpen || !technique) return null
 

@@ -1,0 +1,102 @@
+{
+  "timeline": [
+    {
+      "id": "foundation",
+      "year": "1955",
+      "date": "April 11, 1955",
+      "title": "Official Naming of Taekwon-Do",
+      "description": "General Choi Hong Hi officially names the martial art 'Taekwon-Do', meaning 'the way of the foot and fist'.",
+      "icon": "🥋",
+      "category": "foundation",
+      "detailed": {
+        "background": "After years of development and research, General Choi presented the new martial art to Korean military and political leaders.",
+        "significance": "This marked the formal beginning of Taekwon-Do as a distinct martial art separate from other Korean martial arts.",
+        "keyFigures": ["General Choi Hong Hi", "Nam Tae Hi", "Han Cha Kyo"]
+      }
+    },
+    {
+      "id": "itf-establishment",
+      "year": "1966",
+      "date": "March 22, 1966",
+      "title": "International Taekwon-Do Federation Founded",
+      "description": "General Choi establishes the International Taekwon-Do Federation (ITF) with nine founding countries.",
+      "icon": "🌍",
+      "category": "organization",
+      "detailed": {
+        "background": "The ITF was created to promote and standardize Taekwon-Do worldwide, separate from political influences.",
+        "significance": "This established the global framework for ITF Taekwon-Do practice and dissemination.",
+        "foundingCountries": ["Vietnam", "Malaysia", "Singapore", "West Germany", "USA", "Turkey", "Italy", "Egypt", "Korea"]
+      }
+    },
+    {
+      "id": "encyclopedia",
+      "year": "1972",
+      "date": "1972",
+      "title": "First Taekwon-Do Encyclopedia Published",
+      "description": "General Choi publishes the comprehensive 15-volume Encyclopedia of Taekwon-Do.",
+      "icon": "📚",
+      "category": "documentation",
+      "detailed": {
+        "background": "After decades of research and development, the complete technical system was documented.",
+        "significance": "Provided standardized techniques, patterns, and philosophy for all ITF practitioners worldwide.",
+        "volumes": ["Introduction", "Fundamental Movements", "Patterns", "Sparring", "Self-Defense", "Power Test", "Terminology"]
+      }
+    },
+    {
+      "id": "north-korea-move",
+      "year": "1979",
+      "date": "1979",
+      "title": "ITF Headquarters Moves to North Korea",
+      "description": "Political pressures force General Choi to move ITF headquarters to Pyongyang, North Korea.",
+      "icon": "🏛️",
+      "category": "political",
+      "detailed": {
+        "background": "Due to political conflicts with the South Korean government, General Choi sought a new base for ITF.",
+        "significance": "This move created a permanent division between ITF and WTF Taekwon-Do organizations.",
+        "impact": "Led to the establishment of multiple ITF organizations with different headquarters."
+      }
+    },
+    {
+      "id": "choi-passing",
+      "year": "2002",
+      "date": "June 15, 2002",
+      "title": "Passing of General Choi Hong Hi",
+      "description": "The founder of Taekwon-Do passes away in Pyongyang at age 83.",
+      "icon": "🕊️",
+      "category": "legacy",
+      "detailed": {
+        "background": "General Choi had been battling cancer while continuing to promote Taekwon-Do worldwide.",
+        "significance": "Marked the end of an era and the beginning of multiple ITF successions.",
+        "lastWords": "'Taekwon-Do is for all mankind, for world peace and harmony.'"
+      }
+    },
+    {
+      "id": "multiple-itf",
+      "year": "2002-2003",
+      "date": "2002-2003",
+      "title": "Multiple ITF Organizations Emerge",
+      "description": "Following General Choi's death, several ITF organizations form with different leadership.",
+      "icon": "🔄",
+      "category": "organization",
+      "detailed": {
+        "background": "Disagreements over succession led to the formation of multiple ITF groups.",
+        "significance": "Created diversity in ITF practice while maintaining core technical principles.",
+        "majorGroups": ["ITF headed by Prof. Chang Ung", "ITF headed by Master Tran Trieu Quan", "ITF headed by Grand Master Pablo Trajtenberg"]
+      }
+    },
+    {
+      "id": "modern-global",
+      "year": "2020s",
+      "date": "Present",
+      "title": "Global ITF Taekwon-Do Community",
+      "description": "ITF Taekwon-Do continues to grow worldwide with millions of practitioners.",
+      "icon": "🌟",
+      "category": "modern",
+      "detailed": {
+        "background": "Despite organizational differences, the technical curriculum remains largely unified.",
+        "significance": "ITF Taekwon-Do maintains its identity as a traditional martial art with modern applications.",
+        "currentState": "Practiced in over 140 countries with regular world championships and seminars."
+      }
+    }
+  ]
+}

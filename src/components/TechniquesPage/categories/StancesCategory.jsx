@@ -1,9 +1,10 @@
-// src/components/techniques/categories/StancesCategory.jsx
+// Imports
 import { cn } from '../../../lib/utils'
 import { useState } from 'react'
 import { TechniqueModal } from '../TechniqueModal'
 import stancesData from '../../../data/techniques/stance.json'
 
+// StancesCategory Component
 export const StancesCategory = () => {
   const [selectedTechnique, setSelectedTechnique] = useState(null)
 

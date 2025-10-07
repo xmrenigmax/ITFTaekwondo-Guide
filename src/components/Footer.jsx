@@ -1,4 +1,4 @@
-// components/Footer.jsx
+
 import { Link } from 'react-router-dom'
 
 export const Footer = () => {

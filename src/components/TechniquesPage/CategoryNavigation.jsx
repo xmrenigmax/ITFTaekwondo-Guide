@@ -1,6 +1,7 @@
-// components/techniques/CategoryNavigation.jsx
+// Import
 import { cn } from '../../lib/utils'
 
+// Category Navigation Component
 export const CategoryNavigation = ({ categories, currentCategory, onCategoryChange }) => {
   return (
     <nav className="sticky top-16 z-40 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">

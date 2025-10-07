@@ -1,6 +1,7 @@
-// components/FeaturedGrid.jsx
+
 import { Link } from 'react-router-dom'
 
+// featured grid component for homepage
 export const FeaturedGrid = () => {
   // Featured sections data with icons and descriptions
   const featuredSections = [

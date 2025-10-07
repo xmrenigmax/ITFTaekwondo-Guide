@@ -1,12 +1,15 @@
-// src/components/techniques/categories/BlocksCategory.jsx
+
+// BlocksCategory
 import { cn } from '../../../lib/utils'
 import { useState } from 'react'
 import { TechniqueModal } from '../TechniqueModal'
 import blocksData from '../../../data/techniques/blocks.json'
 
+// BlocksCategory Component
 export const BlocksCategory = () => {
   const [selectedTechnique, setSelectedTechnique] = useState(null)
 
+  // Render
   return (
     <div className="py-8">
       {/* Page Header */}

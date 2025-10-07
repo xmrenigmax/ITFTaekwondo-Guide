@@ -1,4 +1,4 @@
-// components/Stats.jsx
+
 export const Stats = () => {
   return (
     // Stats section with subtle background for visual separation

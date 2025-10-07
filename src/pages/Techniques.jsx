@@ -1,4 +1,4 @@
-// pages/Techniques.jsx
+// imports
 import { useState } from 'react'
 import { TechniquesHero } from '../components/TechniquesPage/TechniquesHero'
 import { CategoryNavigation } from '../components/TechniquesPage/CategoryNavigation'
@@ -10,6 +10,7 @@ import { KicksCategory } from '../components/TechniquesPage/categories/KicksCate
 import { ThrustsCategory } from '../components/TechniquesPage/categories/ThrustsCategory'
 import { PunchesCategory } from '../components/TechniquesPage/categories/PunchesCategory'
 
+// Main Techniques Page Component
 export const Techniques = () => {
   const [currentCategory, setCurrentCategory] = useState('overview')
 

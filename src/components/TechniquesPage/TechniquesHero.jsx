@@ -1,4 +1,5 @@
-// src/components/techniques/TechniquesHero.jsx
+
+// TechniquesHero 
 export const TechniquesHero = () => {
   return (
     <section className="pt-16 bg-gradient-to-br from-background to-primary/30 border-b border-border">

@@ -6,6 +6,7 @@ import { Terminology } from './pages/Terminology'
 import { NotFound } from './pages/NotFound'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
+import { History } from './pages/History'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/techniques" element={<Techniques/>} />
             <Route path="/patterns" element={<Patterns/>} />
             <Route path="/terminology" element={<Terminology/>} />
+            <Route path="/history" element={<History/>} />
             <Route path="*" element={<NotFound/>} />
           </Routes>
         <Footer/>

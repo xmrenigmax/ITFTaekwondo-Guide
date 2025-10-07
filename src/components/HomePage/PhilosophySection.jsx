@@ -1,4 +1,4 @@
-// components/PhilosophySection.jsx
+
 export const PhilosophySection = () => {
   return (
     // Philosophy section with subtle gradient background

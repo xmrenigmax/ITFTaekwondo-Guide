@@ -1,9 +1,10 @@
-// src/components/techniques/categories/ThrustsCategory.jsx
+
 import { cn } from '../../../lib/utils'
 import { useState } from 'react'
 import { TechniqueModal } from '../TechniqueModal'
 import thrustsData from '../../../data/techniques/thrusts.json'
 
+// ThrustsCategory Component
 export const ThrustsCategory = () => {
   const [selectedTechnique, setSelectedTechnique] = useState(null)
 

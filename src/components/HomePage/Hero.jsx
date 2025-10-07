@@ -1,9 +1,9 @@
-// components/HeroSection.jsx
+
 import { Link } from 'react-router-dom'
 
 export const Hero = () => {
   return (
-    // Hero section - full viewport height with fixed positioning for navbar
+    // Hero section 
     <section className="pt-16 h-screen flex items-center justify-center relative overflow-hidden">
       
       {/* Background container with image and overlay effects */}

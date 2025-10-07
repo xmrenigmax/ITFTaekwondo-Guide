@@ -1,7 +1,11 @@
-// src/components/techniques/TechniquesOverview.jsx
+
+
 import { cn } from '../../lib/utils'
 
+// TechniquesOverview Component
 export const TechniquesOverview = ({ onCategorySelect }) => {
+
+  // Category Data
   const categoryCards = [
     {
       id: 'stances',

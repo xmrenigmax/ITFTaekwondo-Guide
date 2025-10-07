@@ -1,12 +1,15 @@
-// src/components/techniques/categories/KicksCategory.jsx
+
+// import necessary libraries and components
 import { cn } from '../../../lib/utils'
 import { useState } from 'react'
 import { TechniqueModal } from '../TechniqueModal'
 import kicksData from '../../../data/techniques/kick.json'
 
+// KicksCategory Component
 export const KicksCategory = () => {
   const [selectedTechnique, setSelectedTechnique] = useState(null)
 
+  // Render the component
   return (
     <div className="py-8">
       {/* Page Header */}
@@ -26,7 +29,7 @@ export const KicksCategory = () => {
         </h3>
         
         <div className="relative">
-          {/* Timeline Line - Updated for kicks belt progression */}
+          {/* Timeline Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-yellow-300 via-yellow-400 via-green-500 via-blue-500 via-red-500 to-red-600 rounded-full"></div>
           
           {/* Belt Levels */}

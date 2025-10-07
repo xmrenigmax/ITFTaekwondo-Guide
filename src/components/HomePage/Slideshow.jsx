@@ -1,4 +1,4 @@
-// components/Slideshow.jsx
+
 import { useState, useEffect } from 'react'
 
 // Slide data featuring the 5 Tenets of Taekwondo with Korean names and captions
