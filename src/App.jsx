@@ -11,7 +11,7 @@ import { Quiz } from './pages/Quiz'
 import { useScrollTo } from './hooks/useScrollTo'
 
 const ScrollToTopWrapper = ({ children }) => {
-  useScrollTo('top')
+  useScrollTo('top','smooth')
   return children
 }
 

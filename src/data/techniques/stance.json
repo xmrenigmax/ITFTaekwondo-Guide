@@ -21,7 +21,7 @@
   "beltLevels": [
     {
       "belt": "White Belt",
-      "beltColor": "from-gray-100 to-gray-300",
+      "beltColor": "from-gray-300 to-gray-900",
       "techniques": [
         {
           "korean": "Charyot Sogi",
@@ -403,7 +403,7 @@
     },
     {
       "belt": "Red Belt",
-      "beltColor": "from-red-600 to-red-800",
+      "beltColor": "from-red-500 to-red-700",
       "techniques": [
         {
           "korean": "Moa Junbi Sogi C",

@@ -21,7 +21,7 @@
   "beltLevels": [
     {
       "belt": "White Belt",
-      "beltColor": "from-gray-100 to-gray-300",
+      "beltColor": "from-gray-300 to-gray-900",
       "techniques": [
         {
           "korean": "Baro Jirugi",

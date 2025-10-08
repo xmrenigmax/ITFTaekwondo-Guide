@@ -211,7 +211,7 @@
     },
     {
       "belt": "Red Belt",
-      "beltColor": "from-red-600 to-red-800",
+      "beltColor": "from-red-500 to-red-700",
       "techniques": [
         {
           "korean": "Naeryo Taerigi",
