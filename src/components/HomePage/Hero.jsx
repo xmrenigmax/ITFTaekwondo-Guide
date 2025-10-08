@@ -52,7 +52,7 @@ export const Hero = () => {
    */
   const renderMainHeading = () => (
     <div className="mb-8">
-       <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight drop-shadow-lg">
+       <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 tracking-tight drop-shadow-lg">
         ITF <span className="text-red-800 animate-gradient bg-gradient-to-r from-red-800 via-red-600 to-red-800 bg-clip-text text-transparent">Taekwon-Do</span>
       </h1>
        <div className="w-32 h-1 bg-gradient-to-r from-red-800 to-red-600 mx-auto mb-6 rounded-full shadow-lg"></div>

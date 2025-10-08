@@ -100,7 +100,7 @@ export const Slideshow = () => {
   return (
     <section 
       className="
-        relative h-96 md:h-[500px] lg:h-[600px] overflow-hidden
+        relative h-96 md:h-[600px] lg:h-[600px] overflow-hidden
         rounded-2xl mx-4 md:mx-8 lg:mx-auto max-w-6xl
         shadow-2xl border border-white/20
       "

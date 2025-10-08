@@ -53,9 +53,9 @@ export const PatternHero = () => {
   const renderStatisticsBadges = () => (
     <div className="flex flex-wrap justify-center gap-4 animate-stagger-fade-in mb-10">
       {[
-        { label: '24 Patterns', value: '24', delay: '0ms' },
+        { label: 'Patterns', value: '24', delay: '0ms' },
         { label: 'White to Black Belt', value: '9', delay: '100ms' },
-        { label: '1084 Total Movements', value: '1084', delay: '200ms' }
+        { label: 'Total Movements', value: '1084', delay: '200ms' }
       ].map((stat, index) => (
         <div
           key={stat.label}

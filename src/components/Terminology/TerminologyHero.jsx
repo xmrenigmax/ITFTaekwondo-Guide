@@ -81,9 +81,9 @@ export const TerminologyHero = () => {
    * @returns {JSX.Element} Main title component
    */
   const renderMainTitle = () => (
-    <div className="mb-8">
+    <div className="mb-8 animate-fade-in-down">
       <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight drop-shadow-lg">
-        ITF <span className="text-blue-800 animate-gradient bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 bg-clip-text text-transparent">Legacy</span>
+        ITF <span className="text-blue-800 animate-gradient bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 bg-clip-text text-transparent">Terminology</span>
       </h1>
        <div className="w-32 h-1 bg-gradient-to-r from-blue-800 to-blue-600 mx-auto mb-6 rounded-full shadow-lg"></div>
     </div>
@@ -94,7 +94,7 @@ export const TerminologyHero = () => {
    * @returns {JSX.Element} Subtitle component
    */
   const renderSubtitle = () => (
-    <p className="text-xl sm:text-2xl lg:text-3xl text-foreground/80 mb-8 leading-relaxed font-light">
+    <p className="text-xl sm:text-2xl lg:text-3xl text-foreground/80 mb-8 leading-relaxed font-light animate-fade-in-down">
       Master the Language of Traditional <span className="font-semibold text-blue-700 bg-gradient-to-r from-blue-700 to-blue-700 bg-clip-text text-transparent">Taekwon-Do</span>
     </p>
   )
@@ -104,7 +104,7 @@ export const TerminologyHero = () => {
    * @returns {JSX.Element} Description component
    */
   const renderDescription = () => (
-    <p className="text-lg sm:text-xl text-foreground/70 max-w-2xl mx-auto mb-12 leading-relaxed">
+    <p className="text-lg sm:text-xl text-foreground/70 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in-up">
       Comprehensive dictionary of Korean commands, techniques, and philosophy 
       with authentic audio pronunciation. Essential knowledge for dedicated practitioners 
       seeking to deepen their understanding of traditional ITF Taekwon-Do.
@@ -116,7 +116,7 @@ export const TerminologyHero = () => {
    * @returns {JSX.Element} Feature indicators component
    */
   const renderFeatureIndicators = () => (
-    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-foreground/60">
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-foreground/60 animate-stagger-fade-in">
       <div className="flex items-center gap-3 bg-background/50 backdrop-blur-sm px-4 py-3 rounded-full border border-border/50 hover:border-primary/30 transition-all duration-300 hover:scale-105">
         <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
         <span className="font-medium">Authentic Audio Pronunciation</span>

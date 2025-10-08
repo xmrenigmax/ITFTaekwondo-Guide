@@ -74,8 +74,8 @@ export const TechniquesHero = () => {
    * @returns {JSX.Element} Main heading component
    */
   const renderMainHeading = () => (
-    <div className="mb-8">
-       <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight drop-shadow-lg">
+    <div className="mb-8 animate-fade-in-down">
+       <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight drop-shadow-lg ">
         ITF <span className="text-blue-800 animate-gradient bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 bg-clip-text text-transparent">Techniques</span>
       </h1>
        <div className="w-32 h-1 bg-gradient-to-r from-blue-800 to-blue-600 mx-auto mb-6 rounded-full shadow-lg"></div>
@@ -93,7 +93,7 @@ export const TechniquesHero = () => {
    */
   const renderStatsGrid = () => (
     <div 
-      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-4xl mx-auto mb-16"
+      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-4xl mx-auto mb-16 animate-fade-in-up"
       role="grid"
       aria-label="ITF Taekwondo technique statistics"
     >
@@ -107,7 +107,7 @@ export const TechniquesHero = () => {
    */
   const renderCallToAction = () => (
     <div 
-      className="bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-2xl p-8 max-w-2xl mx-auto"
+      className="bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-2xl p-8 max-w-2xl mx-auto animate-fade-in-up"
       role="region"
       aria-label="Training motivation"
     >
