@@ -1,0 +1,75 @@
+
+{
+  "quizzes": [
+    {
+      "id": "terminology-crossword-easy",
+      "title": "Basic Terminology Crossword",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "crossword",
+      "description": "Solve the crossword puzzle with fundamental ITF terms",
+      "timeLimit": 600,
+      "points": 200,
+      "grid": {
+        "size": 12,
+        "words": [
+          {
+            "word": "CHARYOT",
+            "clue": "Command to come to attention",
+            "position": {"x": 0, "y": 0, "direction": "across"}
+          },
+          {
+            "word": "KYONGYE", 
+            "clue": "Formal bow showing respect",
+            "position": {"x": 2, "y": 0, "direction": "down"}
+          },
+          {
+            "word": "DOBOK",
+            "clue": "Traditional training uniform",
+            "position": {"x": 0, "y": 3, "direction": "across"}
+          },
+          {
+            "word": "HANA",
+            "clue": "Korean number one",
+            "position": {"x": 6, "y": 1, "direction": "down"}
+          },
+          {
+            "word": "DUL",
+            "clue": "Korean number two", 
+            "position": {"x": 8, "y": 1, "direction": "across"}
+          },
+          {
+            "word": "CHUNBI",
+            "clue": "Ready stance position",
+            "position": {"x": 4, "y": 5, "direction": "across"}
+          }
+        ]
+      }
+    },
+    {
+      "id": "patterns-crossword-medium",
+      "title": "Pattern Names Crossword",
+      "category": "patterns",
+      "difficulty": "medium",
+      "gameType": "crossword", 
+      "description": "Crossword featuring ITF pattern names and meanings",
+      "timeLimit": 480,
+      "points": 250,
+      "grid": {
+        "size": 15,
+        "words": [
+          {
+            "word": "CHONJI",
+            "clue": "Heaven and Earth - first pattern",
+            "position": {"x": 0, "y": 0, "direction": "across"}
+          },
+          {
+            "word": "DANGUN",
+            "clue": "Holy founder of Korea",
+            "position": {"x": 1, "y": 2, "direction": "down"}
+          }
+        ]
+      }
+    }
+  ]
+}

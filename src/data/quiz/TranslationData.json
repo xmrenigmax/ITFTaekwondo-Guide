@@ -1,0 +1,32 @@
+
+{
+  "quizzes": [
+    {
+      "id": "english-korean-translation-easy",
+      "title": "English to Korean Translation",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "translation", 
+      "description": "Translate basic English terms to Korean",
+      "questionCount": 6,
+      "timeLimit": 240,
+      "points": 120,
+      "questions": [
+        {
+          "id": "q1",
+          "english": "Attention",
+          "korean": "차렷",
+          "romanized": "Charyeot",
+          "audio": "/audio/terminology/charyot.mp3"
+        },
+        {
+          "id": "q2", 
+          "english": "Bow",
+          "korean": "경례",
+          "romanized": "Gyeongnye",
+          "audio": "/audio/terminology/kyongye.mp3"
+        }
+      ]
+    }
+  ]
+}

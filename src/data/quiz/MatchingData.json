@@ -1,0 +1,85 @@
+
+{
+  "quizzes": [
+    {
+      "id": "korean-english-matching-easy",
+      "title": "Korean-English Snap Match",
+      "category": "terminology",
+      "difficulty": "easy", 
+      "gameType": "matching",
+      "description": "Match Korean terms with their English meanings",
+      "timeLimit": 180,
+      "points": 130,
+      "pairs": [
+        {
+          "id": "pair1",
+          "korean": "차렷",
+          "english": "Attention",
+          "romanized": "Charyeot",
+          "audio": "/audio/terminology/charyot.mp3"
+        },
+        {
+          "id": "pair2",
+          "korean": "경례",
+          "english": "Bow", 
+          "romanized": "Gyeongnye",
+          "audio": "/audio/terminology/kyongye.mp3"
+        },
+        {
+          "id": "pair3",
+          "korean": "준비",
+          "english": "Ready Stance",
+          "romanized": "Junbi",
+          "audio": "/audio/terminology/chunbi.mp3"
+        },
+        {
+          "id": "pair4", 
+          "korean": "하나",
+          "english": "One",
+          "romanized": "Hana",
+          "audio": "/audio/terminology/hana.mp3"
+        },
+        {
+          "id": "pair5",
+          "korean": "둘",
+          "english": "Two",
+          "romanized": "Dul", 
+          "audio": "/audio/terminology/dul.mp3"
+        },
+        {
+          "id": "pair6",
+          "korean": "도복",
+          "english": "Dobok (Uniform)",
+          "romanized": "Dobok",
+          "audio": "/audio/terminology/do-bok.mp3"
+        }
+      ]
+    },
+    {
+      "id": "pattern-meanings-matching-medium", 
+      "title": "Pattern Meanings Match",
+      "category": "patterns",
+      "difficulty": "medium",
+      "gameType": "matching",
+      "description": "Match pattern names with their historical meanings",
+      "timeLimit": 210,
+      "points": 160,
+      "pairs": [
+        {
+          "id": "pair1", 
+          "korean": "천지",
+          "english": "",
+          "romanized": "Chon-Ji",
+          "meaning": "Heaven and Earth - beginning of the world"
+        },
+        {
+          "id": "pairw",
+          "korean": "도산",
+          "english": "",
+          "romanized": "Do-San",
+          "meaning": "Patriot Ahn Chang-Ho pseudonym"
+        }
+      ]
+    }
+  ]
+}

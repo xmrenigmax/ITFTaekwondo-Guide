@@ -7,6 +7,7 @@ import { NotFound } from './pages/NotFound'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
 import { History } from './pages/History'
+import { Quiz } from './pages/Quiz'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/terminology" element={<Terminology/>} />
             <Route path="/history" element={<History/>} />
             <Route path="*" element={<NotFound/>} />
+            <Route path="/quiz" element={<Quiz/>} />
           </Routes>
         <Footer/>
       </BrowserRouter>

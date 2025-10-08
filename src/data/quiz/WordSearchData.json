@@ -1,0 +1,26 @@
+
+{
+  "quizzes": [
+    {
+      "id": "korean-basics-wordsearch-easy",
+      "title": "Basic Korean Terms Word Search",
+      "category": "terminology",
+      "difficulty": "easy", 
+      "gameType": "wordsearch",
+      "description": "Find fundamental Korean terms in the grid",
+      "timeLimit": 300,
+      "points": 150,
+      "grid": {
+        "size": 10,
+        "words": [
+          {"word": "CHARYOT", "clue": "Attention command"},
+          {"word": "KYONGYE", "clue": "Formal bow"},
+          {"word": "DOBOK", "clue": "Training uniform"},
+          {"word": "TI", "clue": "Belt"},
+          {"word": "HANA", "clue": "Number one"},
+          {"word": "DUL", "clue": "Number two"}
+        ]
+      }
+    }
+  ]
+}

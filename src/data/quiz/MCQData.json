@@ -1,0 +1,59 @@
+
+{
+  "quizzes": [
+    {
+      "id": "basic-terms-easy",
+      "title": "Basic Commands & Numbers",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "mcq",
+      "description": "Learn fundamental Korean commands and counting",
+      "questionCount": 5,
+      "timeLimit": 180,
+      "points": 100,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What does 'Charyot' mean?",
+          "options": ["Attention", "Bow", "Ready", "Begin"],
+          "correctAnswer": 0,
+          "explanation": "Charyot means 'Attention' - the command to come to attention position."
+        },
+        {
+          "id": "q2",
+          "question": "What is the Korean word for 'bow'?",
+          "options": ["Chunbi", "Kyongye", "Sijak", "Baro"],
+          "correctAnswer": 1,
+          "explanation": "Kyongye is the formal bow showing respect to instructors and opponents."
+        },
+        {
+          "id": "q3", 
+          "question": "What number is 'Hana'?",
+          "options": ["One", "Two", "Three", "Four"],
+          "correctAnswer": 0,
+          "explanation": "Hana is the Korean word for the number one."
+        }
+      ]
+    },
+    {
+      "id": "pattern-basics-easy",
+      "title": "Pattern Fundamentals",
+      "category": "patterns", 
+      "difficulty": "easy",
+      "gameType": "mcq",
+      "description": "Basic knowledge of ITF patterns",
+      "questionCount": 4,
+      "timeLimit": 120,
+      "points": 80,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "How many movements are in Chon-Ji pattern?",
+          "options": ["19", "21", "24", "28"],
+          "correctAnswer": 0,
+          "explanation": "Chon-Ji has 19 movements, representing heaven and earth."
+        }
+      ]
+    }
+  ]
+}

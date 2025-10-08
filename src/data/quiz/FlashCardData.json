@@ -1,0 +1,81 @@
+
+{
+  "quizzes": [
+    {
+      "id": "basic-commands-flashcards-easy",
+      "title": "Basic Commands Flashcards",
+      "category": "terminology", 
+      "difficulty": "easy",
+      "gameType": "flashcards",
+      "description": "Learn fundamental Korean commands with audio pronunciation",
+      "timeLimit": 180,
+      "points": 120,
+      "cards": [
+        {
+          "id": "card1",
+          "front": "Attention",
+          "back": "차렷",
+          "romanized": "Charyeot",
+          "audio": "/audio/terminology/charyot.mp3",
+          "meaning": "Command to come to attention position"
+        },
+        {
+          "id": "card2",
+          "front": "Bow", 
+          "back": "경례",
+          "romanized": "Gyeongnye",
+          "audio": "/audio/terminology/kyongye.mp3",
+          "meaning": "Formal bow showing respect"
+        },
+        {
+          "id": "card3",
+          "front": "Ready Stance",
+          "back": "준비",
+          "romanized": "Junbi",
+          "audio": "/audio/terminology/chunbi.mp3", 
+          "meaning": "Basic ready position"
+        },
+        {
+          "id": "card4",
+          "front": "Begin",
+          "back": "시작",
+          "romanized": "Sijak",
+          "audio": "/audio/terminology/sijak.mp3",
+          "meaning": "Command to start an exercise"
+        },
+        {
+          "id": "card5",
+          "front": "One",
+          "back": "하나",
+          "romanized": "Hana",
+          "audio": "/audio/terminology/hana.mp3",
+          "meaning": "Korean number one"
+        }
+      ]
+    },
+    {
+      "id": "pattern-meanings-flashcards-medium",
+      "title": "Pattern Meanings Flashcards", 
+      "category": "patterns",
+      "difficulty": "medium",
+      "gameType": "flashcards",
+      "description": "Learn pattern names and their historical meanings",
+      "timeLimit": 240,
+      "points": 150,
+      "cards": [
+        {
+          "id": "card1",
+          "front": "Chon-Ji",
+          "back": "Heaven and Earth",
+          "meaning": "Represents the beginning of the world - 19 movements"
+        },
+        {
+          "id": "card2",
+          "front": "Dan-Gun",
+          "back": "Holy founder of Korea", 
+          "meaning": "Named after legendary founder in 2333 BC - 21 movements"
+        }
+      ]
+    }
+  ]
+}
