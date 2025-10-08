@@ -8,22 +8,30 @@ import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
 import { History } from './pages/History'
 import { Quiz } from './pages/Quiz'
+import { useScrollTo } from './hooks/useScrollTo'
+
+const ScrollToTopWrapper = ({ children }) => {
+  useScrollTo('top')
+  return children
+}
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
-          <Routes>
-            <Route index element={<Home/>} />
-            <Route path="/techniques" element={<Techniques/>} />
-            <Route path="/patterns" element={<Patterns/>} />
-            <Route path="/terminology" element={<Terminology/>} />
-            <Route path="/history" element={<History/>} />
-            <Route path="*" element={<NotFound/>} />
-            <Route path="/quiz" element={<Quiz/>} />
-          </Routes>
-        <Footer/>
+      <ScrollToTopWrapper>
+        <Navbar/>
+            <Routes>
+              <Route index element={<Home/>} />
+              <Route path="/techniques" element={<Techniques/>} />
+              <Route path="/patterns" element={<Patterns/>} />
+              <Route path="/terminology" element={<Terminology/>} />
+              <Route path="/history" element={<History/>} />
+              <Route path="*" element={<NotFound/>} />
+              <Route path="/quiz" element={<Quiz/>} />
+            </Routes>
+          <Footer/>
+      </ScrollToTopWrapper>
       </BrowserRouter>
     </>
   );

@@ -1,9 +1,9 @@
-
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 
 export const WordSearchGame = ({ quiz, onComplete }) => {
   const [grid, setGrid] = useState([])
   const [foundWords, setFoundWords] = useState([])
+  const [foundWordPositions, setFoundWordPositions] = useState([]) // ADD THIS
   const [selectedCells, setSelectedCells] = useState([])
   const [isSelecting, setIsSelecting] = useState(false)
   const [startCell, setStartCell] = useState(null)
@@ -24,6 +24,13 @@ export const WordSearchGame = ({ quiz, onComplete }) => {
       finishGame()
     }
   }, [timeLeft, gameState])
+
+  // ADD THIS: Check if game should end when all words are found
+  useEffect(() => {
+    if (foundWords.length === quiz.grid.words.length && foundWords.length > 0) {
+      setTimeout(() => finishGame(), 500)
+    }
+  }, [foundWords, quiz.grid.words.length])
 
   const generateGrid = () => {
     const size = quiz.grid.size
@@ -203,10 +210,13 @@ export const WordSearchGame = ({ quiz, onComplete }) => {
     const targetWords = quiz.grid.words.map(w => w.word.toUpperCase())
     
     let foundWord = null
+    let isReversed = false
+    
     if (targetWords.includes(selectedWord)) {
       foundWord = selectedWord
     } else if (targetWords.includes(reversedWord)) {
       foundWord = reversedWord
+      isReversed = true
     }
     
     if (foundWord && !foundWords.includes(foundWord)) {
@@ -214,18 +224,24 @@ export const WordSearchGame = ({ quiz, onComplete }) => {
       setFoundWords(newFoundWords)
       setWordStatus(prev => ({ ...prev, [foundWord]: true }))
       
-      // Highlight the found word cells permanently
-      highlightFoundWord(selectedCells)
+      // Store the positions of the found word for permanent highlighting
+      const wordPositions = isReversed ? [...selectedCells].reverse() : selectedCells
+      setFoundWordPositions(prev => [...prev, ...wordPositions])
       
-      // Check if game is complete
-      if (newFoundWords.length === targetWords.length) {
-        setTimeout(() => finishGame(), 500)
-      }
+      // Clear selection immediately after finding a word
+      setSelectedCells([])
+      
+      // Game completion is now handled by the useEffect above
+    } else {
+      // Clear selection if word wasn't found
+      setSelectedCells([])
     }
-    
-    setSelectedCells([])
   }
 
+  // ADD THIS: Check if a cell is part of a found word
+  const isCellInFoundWord = (row, col) => {
+    return foundWordPositions.some(([r, c]) => r === row && c === col)
+  }
 
   const finishGame = () => {
     setGameState('finished')
@@ -281,8 +297,8 @@ export const WordSearchGame = ({ quiz, onComplete }) => {
             {quiz.grid.words.map((wordObj, index) => (
               <div key={index} className={`p-3 rounded-lg border-2 ${
                 isWordFound(wordObj.word) 
-                  ? 'bg-green-50 border-green-200 text-green-800' 
-                  : 'bg-gray-50 border-gray-200 text-gray-600'
+                  ? 'bg-green-100 dark:bg-green-900/30 border-green-200 dark:border-green-800 text-green-800 dark:text-green-200' 
+                  : 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300'
               }`}>
                 <div className="font-semibold">{wordObj.word}</div>
                 <div className="text-sm opacity-75">{wordObj.clue}</div>
@@ -343,9 +359,10 @@ export const WordSearchGame = ({ quiz, onComplete }) => {
                     transition-all duration-200 cursor-pointer select-none
                     ${isCellSelected(rowIndex, colIndex)
                       ? 'bg-primary text-white border-primary shadow-md transform scale-105'
-                      : 'bg-background border-primary/30 hover:bg-primary/5'
+                      : isCellInFoundWord(rowIndex, colIndex)
+                      ? 'bg-green-500 dark:bg-green-600 text-white border-green-500 dark:border-green-600 shadow-md'
+                      : 'bg-background border-primary/30 hover:bg-primary/5 dark:hover:bg-primary/10'
                     }
-                    ${isWordFound(cell) ? 'opacity-50' : ''}
                   `}
                   onMouseDown={() => handleCellMouseDown(rowIndex, colIndex)}
                   onMouseEnter={() => handleCellMouseEnter(rowIndex, colIndex)}
@@ -367,8 +384,8 @@ export const WordSearchGame = ({ quiz, onComplete }) => {
                   key={index}
                   className={`p-3 rounded-lg border-2 transition-colors ${
                     isWordFound(wordObj.word)
-                      ? 'bg-green-100 border-green-300 text-green-800 line-through'
-                      : 'bg-background-50 border-gray-200 text-foreground'
+                      ? 'bg-green-100 dark:bg-green-900/30 border-green-300 dark:border-green-700 text-green-800 dark:text-green-200 line-through'
+                      : 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700 text-foreground'
                   }`}
                 >
                   <div className="font-semibold">{wordObj.word}</div>

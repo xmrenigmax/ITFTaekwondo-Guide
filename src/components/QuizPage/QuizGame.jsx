@@ -1,15 +1,16 @@
-// src/components/QuizPage/QuizGame.jsx
+
 import { useState, useEffect, useRef } from 'react'
 import { MCQGame } from './games/MCQGame'
 import { FlashcardGame } from './games/FlashCardGame'
 import { MatchingGame } from './games/MatchingGame'
 import { TranslationGame } from './games/TranslationGame'
 import { WordSearchGame } from './games/WordSearchGame'
+import { useScrollTo } from '../../hooks/useScrollTo'
 
 export const QuizGame = ({ quiz, onBack }) => {
   const [gameState, setGameState] = useState('ready') // 'ready', 'playing', 'finished'
   const [gameResults, setGameResults] = useState(null)
-  const gameContentRef = useRef(null)
+  const scrollToTop = useScrollTo('top')
 
   const handleGameComplete = (results) => {
     setGameResults(results)
@@ -22,13 +23,17 @@ export const QuizGame = ({ quiz, onBack }) => {
   }
 
   useEffect(() => {
-    if (gameState === 'playing' && gameContentRef.current) {
-      gameContentRef.current.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      })
+    if (gameState === 'playing' || gameState === 'finished') {
+      scrollToTop('smooth')
     }
-  }, [gameState])
+  }, [gameState, scrollToTop])
+
+  const handleStartGame = () => {
+    setGameState('playing')
+    setTimeout(() => {
+      scrollToTop('smooth')
+    }, 100)
+  }
 
   // Render the appropriate game component
   const renderGame = () => {
@@ -76,7 +81,7 @@ export const QuizGame = ({ quiz, onBack }) => {
         <div className="w-20"></div>
       </div>
 
-      {/* Game Content */}
+       {/* Game Content */}
       <div className="bg-background border border-border rounded-2xl p-8">
         {gameState === 'ready' && (
           <div className="text-center space-y-6">
@@ -89,9 +94,8 @@ export const QuizGame = ({ quiz, onBack }) => {
               {Math.floor(quiz.timeLimit / 60)} minute time limit
             </p>
             <button
-              onClick={() => setGameState('playing')}
-              className="bg-primary hover:bg-primary-hover text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-            >
+              onClick={handleStartGame}
+              className="bg-primary hover:bg-primary-hover text-white px-8 py-3 rounded-lg font-semibold transition-colors">
               Start Game
             </button>
           </div>

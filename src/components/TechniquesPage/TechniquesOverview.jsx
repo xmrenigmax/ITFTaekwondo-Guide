@@ -1,9 +1,11 @@
 
 
 import { cn } from '../../lib/utils'
+import { useScrollTo } from '../../hooks/useScrollTo'
 
 // TechniquesOverview Component
 export const TechniquesOverview = ({ onCategorySelect }) => {
+  const scrollTo = useScrollTo()
 
   // Category Data
   const categoryCards = [
@@ -51,6 +53,11 @@ export const TechniquesOverview = ({ onCategorySelect }) => {
     }
   ]
 
+  const handleCategoryClick = (categoryId) => {
+    scrollTo(500)
+    onCategorySelect(categoryId)
+  }
+
   return (
     <div className="py-8">
       {/* Page Header */}
@@ -69,7 +76,7 @@ export const TechniquesOverview = ({ onCategorySelect }) => {
         {categoryCards.map((category) => (
           <button
             key={category.id}
-            onClick={() => onCategorySelect(category.id)}
+            onClick={() => handleCategoryClick(category.id)}
             className="group text-left bg-background border border-border rounded-2xl p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             {/* Category Header with Gradient Accent */}
