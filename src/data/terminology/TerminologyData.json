@@ -23,7 +23,7 @@
       "romanized": "Charyeot",
       "beltLearnt": "White",
       "category": "Basics & Commands",
-      "sound": "/audio/terminology/charyot.mp3",
+      "sound": "/../public/audio/charyot.mp3",
       "meaning": "Command to come to attention position"
     },
     {
@@ -33,7 +33,7 @@
       "romanized": "Gyeongnye",
       "beltLearnt": "White",
       "category": "Basics & Commands",
-      "sound": "/audio/terminology/kyongye.mp3",
+      "sound": "/../public/audio/terminology/kyongye.mp3",
       "meaning": "Formal bow showing respect"
     },
     {

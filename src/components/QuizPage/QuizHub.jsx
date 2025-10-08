@@ -129,10 +129,11 @@ export const QuizHub = ({ onQuizSelect }) => {
    * @returns {JSX.Element} Header component
    */
   const renderHeader = () => (
-    <div className="text-center mt-20">
-      <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-        ITF Taekwon-Do <span className="text-primary">Quiz</span>
+    <div className="mb-8 text-center animate-fade-in-down">
+      <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight drop-shadow-lg">
+        ITF <span className="text-blue-800 animate-gradient bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 bg-clip-text text-transparent">Quizzes</span>
       </h1>
+      <div className="w-32 h-1 bg-gradient-to-r from-blue-800 to-blue-600 mx-auto mb-6 rounded-full shadow-lg"></div>
       <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
         Test your knowledge, master the art. Challenge yourself with interactive quizzes.
       </p>

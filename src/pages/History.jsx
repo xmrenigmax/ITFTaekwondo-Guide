@@ -1,56 +1,112 @@
-// src/pages/History.jsx
+// ===== MAIN IMPORTS =====
 import { Timeline } from '../components/HistoryPage/Timeline'
+import { HistoryHero } from '../components/HistoryPage/HistoryHero'
 import historyData from '../data/history/HistoryTimeline.json'
 
+// ===== MAIN HISTORY COMPONENT =====
+
+/**
+ * History Component
+ * 
+ * Comprehensive history application container that showcases the rich heritage 
+ * and evolution of ITF Taekwondo through interactive timelines and engaging content.
+ * 
+ * Features:
+ * - Full-screen professional layout with gradient background
+ * - Interactive historical timeline with detailed events
+ * - Hero section with historical milestones and impact
+ * - Responsive design optimized for all devices
+ * - Accessibility-compliant navigation and content structure
+ * - Commercial-ready code with comprehensive documentation
+ * 
+ * @returns {JSX.Element} Complete history application interface
+ */
 export const History = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 to-primary/10 pt-20 pb-6 sm:pt-24 sm:pb-8 lg:pt-28 lg:pb-12"> {/* Added pt-20 for navbar space */}
-      <div className="max-w-full px-4 sm:px-6 lg:px-8 mx-auto"> {/* Changed to max-w-full and better padding */}
-        
-        {/* Page Header */}
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 sm:mb-6"> {/* Smaller text */}
-            ITF Taekwon-Do History
-          </h1>
-          <p className="text-sm sm:text-base lg:text-lg text-foreground/70 max-w-full mx-auto leading-relaxed px-2"> {/* max-w-full */}
-            Journey through the remarkable history of International Taekwon-Do Federation, 
-            from its founding by General Choi Hong Hi to its global presence today.
-          </p>
-        </div>
+  // ===== RENDER METHODS =====
 
-        {/* Hero Section */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 mb-8 sm:mb-12 lg:mb-16 text-center mx-2 sm:mx-0"> {/* Added mx-2 for mobile */}
-          <div className="text-3xl sm:text-4xl lg:text-5xl mb-3 sm:mb-4">🥋</div> {/* Smaller icon */}
-          <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-foreground mb-3 sm:mb-4"> {/* Smaller heading */}
-            The Way of the Foot and Fist
-          </h2>
-          <p className="text-xs sm:text-sm lg:text-base text-foreground/70 max-w-full mx-auto px-1"> {/* max-w-full, smaller text */}
-            Founded on April 11, 1955, ITF Taekwon-Do has grown from a Korean martial art 
-            to a global phenomenon practiced by millions worldwide.
-          </p>
-        </div>
-
-        {/* Timeline Section */}
-        <div className="mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-0"> {/* Added px-2 for mobile */}
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground text-center mb-6 sm:mb-8 lg:mb-12">
-            Historical Timeline
-          </h2>
-          <Timeline events={historyData.timeline} />
-        </div>
-
-        {/* Legacy Section */}
-        <div className="bg-background border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 text-center mx-2 sm:mx-0"> {/* Added mx-2 for mobile */}
-          <h3 className="text-base sm:text-lg lg:text-xl font-bold text-foreground mb-3 sm:mb-4">
-            Continuing the Legacy
-          </h3>
-          <p className="text-xs sm:text-sm text-foreground/70 max-w-full mx-auto">
-            Today, ITF Taekwon-Do continues to honor General Choi's vision while adapting 
-            to modern times, ensuring this traditional martial art remains relevant and 
-            accessible to future generations.
-          </p>
-        </div>
-
+  /**
+   * Renders the timeline section with historical events
+   * @returns {JSX.Element} Timeline section component
+   */
+  const renderTimelineSection = () => (
+    <section 
+      className="w-full"
+      role="region"
+      aria-label="ITF Taekwondo Historical Timeline"
+    >
+      <div className="text-center mb-12 lg:mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          Historical Chronology
+        </h2>
+        <p className="text-lg sm:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+          Journey through seven decades of ITF Taekwon-Do evolution, from military roots 
+          to global martial art phenomenon.
+        </p>
       </div>
-    </div>
+      <Timeline events={historyData.timeline} />
+    </section>
+  )
+
+  /**
+   * Renders the legacy and continuation section
+   * @returns {JSX.Element} Legacy section component
+   */
+  const renderLegacySection = () => (
+    <section 
+      className="w-full mt-16 lg:mt-20"
+      role="region"
+      aria-label="Continuing the ITF Taekwondo Legacy"
+    >
+      <div className="bg-background/80 backdrop-blur-sm border border-border rounded-2xl p-8 sm:p-10 lg:p-12 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
+          Preserving Tradition, Embracing Innovation
+        </h3>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg text-foreground/70 leading-relaxed mb-6">
+            Today, ITF Taekwon-Do continues to honor General Choi Hong Hi's original vision 
+            while adapting to contemporary needs. This dynamic balance ensures the art remains 
+            both authentic to its traditional roots and accessible to future generations worldwide.
+          </p>
+          <p className="text-sm sm:text-base text-foreground/60 leading-relaxed">
+            Maintaining relevance as both a martial discipline and a way of life for millions 
+            of practitioners across six continents.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+
+  // ===== MAIN COMPONENT RENDER =====
+
+  return (
+    <div 
+      className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-primary/10 py-24"
+      role="main"
+      aria-label="ITF Taekwondo History Application"
+    >
+        
+        {/* Hero Section */}
+ 
+          <HistoryHero />
+
+        
+        {/* Timeline Section */}
+
+          {renderTimelineSection()}
+
+        {/* Legacy Section  */}
+
+          {renderLegacySection()}
+        
+      </div>
+
   )
 }
+
+/**
+ * History Page Prop Types (for documentation)
+ * 
+ * @typedef {Object} HistoryPageProps
+ * @property {Object} historyData - Historical timeline data
+ * @property {Array} historyData.timeline - Array of historical events
+ */

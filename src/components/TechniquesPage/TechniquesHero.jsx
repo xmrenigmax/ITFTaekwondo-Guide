@@ -75,12 +75,13 @@ export const TechniquesHero = () => {
    */
   const renderMainHeading = () => (
     <div className="mb-8">
-      <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
-        ITF <span className="text-primary">Techniques</span>
+       <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight drop-shadow-lg">
+        ITF <span className="text-blue-800 animate-gradient bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 bg-clip-text text-transparent">Techniques</span>
       </h1>
+       <div className="w-32 h-1 bg-gradient-to-r from-blue-800 to-blue-600 mx-auto mb-6 rounded-full shadow-lg"></div>
       
       <p className="text-xl md:text-2xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-        Master <span className="text-primary font-semibold">78 core techniques</span> that form the foundation 
+        Master <span className="text-blue-700 font-semibold">78 core techniques</span> that form the foundation 
         of traditional ITF Taekwondo.
       </p>
     </div>
@@ -111,7 +112,7 @@ export const TechniquesHero = () => {
       aria-label="Training motivation"
     >
       <p className="text-foreground/80 text-lg mb-3 font-medium leading-relaxed">
-        <span className="text-primary font-semibold">Ready to master your form?</span> Explore each category 
+        <span className="text-blue-700 font-semibold">Ready to master your form?</span> Explore each category 
         for detailed breakdowns and step-by-step guidance.
       </p>
       <p className="text-foreground/60 text-sm">
@@ -124,7 +125,7 @@ export const TechniquesHero = () => {
 
   return (
     <section 
-      className="pt-20 bg-gradient-to-br from-background to-primary/30 border-b border-border"
+      className="pt-20 bg-gradient-to-br from-primary/10 via-primary/40 to-primary/100"
       role="banner"
       aria-label="ITF Taekwondo Techniques Introduction"
     >
