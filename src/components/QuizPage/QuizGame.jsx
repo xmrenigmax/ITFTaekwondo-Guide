@@ -6,6 +6,7 @@ import { TranslationGame } from './games/TranslationGame'
 import { WordSearchGame } from './games/WordSearchGame'
 import { useScrollTo } from '../../hooks/useScrollTo'
 import { useGlobalProgress } from '../../hooks/useGlobalProgess'
+import { CrosswordGame } from './games/CrosswordGame'
 
 /**
  * QuizGame Component
@@ -143,6 +144,8 @@ export const QuizGame = ({ quiz, onBack }) => {
         return <TranslationGame quiz={quiz} onComplete={handleGameComplete} />
       case 'wordsearch':
         return <WordSearchGame quiz={quiz} onComplete={handleGameComplete} />
+      case 'crossword':
+        return <CrosswordGame quiz={quiz} onComplete={handleGameComplete} />
       default:
         return (
           <div className="text-center">

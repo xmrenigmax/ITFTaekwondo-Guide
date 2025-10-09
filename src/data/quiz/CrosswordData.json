@@ -1,4 +1,3 @@
-
 {
   "quizzes": [
     {
@@ -14,44 +13,49 @@
         "size": 12,
         "words": [
           {
+            "id": "word-1",
             "word": "CHARYOT",
-            "clue": "Command to come to attention",
-            "position": {"x": 0, "y": 0, "direction": "across"}
+            "clue": "Command to come to attention"
           },
           {
-            "word": "KYONGYE", 
-            "clue": "Formal bow showing respect",
-            "position": {"x": 2, "y": 0, "direction": "down"}
+            "id": "word-2",
+            "word": "KYONGYE",
+            "clue": "Formal bow showing respect"
           },
           {
+            "id": "word-3", 
             "word": "DOBOK",
-            "clue": "Traditional training uniform",
-            "position": {"x": 0, "y": 3, "direction": "across"}
+            "clue": "Traditional training uniform"
           },
           {
+            "id": "word-4",
             "word": "HANA",
-            "clue": "Korean number one",
-            "position": {"x": 6, "y": 1, "direction": "down"}
+            "clue": "Korean number one"
           },
           {
-            "word": "DUL",
-            "clue": "Korean number two", 
-            "position": {"x": 8, "y": 1, "direction": "across"}
-          },
-          {
+            "id": "word-6",
             "word": "CHUNBI",
-            "clue": "Ready stance position",
-            "position": {"x": 4, "y": 5, "direction": "across"}
+            "clue": "Ready stance position"
+          },
+          {
+            "id": "word-7",
+            "word": "BARO",
+            "clue": "Command to return to ready stance"
+          },
+          {
+            "id": "word-8",
+            "word": "SABUM",
+            "clue": "Instructor or teacher"
           }
         ]
       }
     },
     {
-      "id": "patterns-crossword-medium",
+      "id": "patterns-crossword-medium", 
       "title": "Pattern Names Crossword",
       "category": "patterns",
       "difficulty": "medium",
-      "gameType": "crossword", 
+      "gameType": "crossword",
       "description": "Crossword featuring ITF pattern names and meanings",
       "timeLimit": 480,
       "points": 250,
@@ -59,14 +63,44 @@
         "size": 15,
         "words": [
           {
+            "id": "pattern-1",
             "word": "CHONJI",
-            "clue": "Heaven and Earth - first pattern",
-            "position": {"x": 0, "y": 0, "direction": "across"}
+            "clue": "Heaven and Earth - first pattern"
           },
           {
+            "id": "pattern-2", 
             "word": "DANGUN",
-            "clue": "Holy founder of Korea",
-            "position": {"x": 1, "y": 2, "direction": "down"}
+            "clue": "Holy founder of Korea"
+          },
+          {
+            "id": "pattern-3",
+            "word": "WONHYO",
+            "clue": "Noted monk of Silla dynasty"
+          },
+          {
+            "id": "pattern-4",
+            "word": "YULGOK",
+            "clue": "Philosopher and scholar"
+          },
+          {
+            "id": "pattern-5",
+            "word": "JOONGGUN",
+            "clue": "Patriot who assassinated Hiro-Bumi Ito"
+          },
+          {
+            "id": "pattern-6",
+            "word": "TOIGYE",
+            "clue": "Authority on neo-Confucianism"
+          },
+          {
+            "id": "pattern-7",
+            "word": "HWAARANG",
+            "clue": "Youth group of Silla dynasty"
+          },
+          {
+            "id": "pattern-8", 
+            "word": "CHOONGMOO",
+            "clue": "Famous admiral of Yi dynasty"
           }
         ]
       }
