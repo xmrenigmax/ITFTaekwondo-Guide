@@ -63,7 +63,7 @@ export const Stats = () => {
       {
         value: '100+',
         label: 'Techniques',
-        description: 'Stances, Blocks, Strikes & Kicks for comprehensive training'
+        description: 'Stances, Blocks, Strikes & Kicks for practical training'
       },
       {
         value: '1955',
@@ -97,7 +97,7 @@ export const Stats = () => {
         "Refrain from reckless and thoughtless actions. Be as calm and judicious as a mountain."
       </blockquote>
       <cite className="block mt-3 text-foreground/50 text-sm font-medium not-italic">
-        — General Choi Hong Hi, Founder of ITF Taekwondo
+        — General Choi Hong Hi; The Founder of ITF Taekwondo
       </cite>
     </div>
   )

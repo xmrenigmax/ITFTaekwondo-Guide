@@ -21,7 +21,6 @@ const MainNavItems = [
  */
 const AdditionalNavItems = [
   { name: "Terminology", href: "/terminology" },
-  { name: "Drills", href: "/drills" },
   { name: "Quiz", href: "/quiz" },
 ]
 

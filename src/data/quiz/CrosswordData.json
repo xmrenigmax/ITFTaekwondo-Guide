@@ -104,6 +104,166 @@
           }
         ]
       }
+    },
+    {
+      "id": "stances-crossword-medium",
+      "title": "Stances & Positions Crossword",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "crossword",
+      "description": "Identify different stances and body positions",
+      "timeLimit": 450,
+      "points": 220,
+      "grid": {
+        "size": 14,
+        "words": [
+          {
+            "id": "stance-1",
+            "word": "GUNNUNSEOGI",
+            "clue": "Walking stance"
+          },
+          {
+            "id": "stance-2",
+            "word": "NIUNJASEOGI",
+            "clue": "L-shaped defensive stance"
+          },
+          {
+            "id": "stance-3",
+            "word": "JUNBI",
+            "clue": "Ready stance"
+          },
+          {
+            "id": "stance-4",
+            "word": "APSEOGI",
+            "clue": "Front stance"
+          },
+          {
+            "id": "stance-5",
+            "word": "DWITKUBI",
+            "clue": "Back stance"
+          },
+          {
+            "id": "stance-6",
+            "word": "GYOCHA",
+            "clue": "X-shaped position"
+          },
+          {
+            "id": "stance-7",
+            "word": "SAN",
+            "clue": "Mountain or W-shaped position"
+          }
+        ]
+      }
+    },
+    {
+      "id": "philosophy-crossword-hard",
+      "title": "Philosophy & Tenets Crossword",
+      "category": "history",
+      "difficulty": "hard",
+      "gameType": "crossword",
+      "description": "Advanced crossword on Taekwon-Do philosophy",
+      "timeLimit": 540,
+      "points": 300,
+      "grid": {
+        "size": 16,
+        "words": [
+          {
+            "id": "phil-1",
+            "word": "YEEUI",
+            "clue": "Courtesy - first tenet"
+          },
+          {
+            "id": "phil-2",
+            "word": "YOMCHI",
+            "clue": "Integrity - second tenet"
+          },
+          {
+            "id": "phil-3",
+            "word": "INNAE",
+            "clue": "Perseverance - third tenet"
+          },
+          {
+            "id": "phil-4",
+            "word": "GEUKGI",
+            "clue": "Self-control - fourth tenet"
+          },
+          {
+            "id": "phil-5",
+            "word": "BAEKJEOL",
+            "clue": "Indomitable spirit - fifth tenet"
+          },
+          {
+            "id": "phil-6",
+            "word": "DO",
+            "clue": "The way or path of life"
+          },
+          {
+            "id": "phil-7",
+            "word": "DOJANG",
+            "clue": "Training hall"
+          },
+          {
+            "id": "phil-8",
+            "word": "SABEOM",
+            "clue": "Instructor or teacher"
+          }
+        ]
+      }
+    },
+    {
+      "id": "techniques-crossword-hard",
+      "title": "Advanced Techniques Crossword",
+      "category": "techniques",
+      "difficulty": "hard",
+      "gameType": "crossword",
+      "description": "Challenge yourself with advanced techniques and terminology",
+      "timeLimit": 600,
+      "points": 350,
+      "grid": {
+        "size": 18,
+        "words": [
+          {
+            "id": "tech-1",
+            "word": "TTWIMYOCHAGI",
+            "clue": "Jumping kick"
+          },
+          {
+            "id": "tech-2",
+            "word": "DOLLYEOMAKGI",
+            "clue": "Circular block"
+          },
+          {
+            "id": "tech-3",
+            "word": "BITUREOCHAGI",
+            "clue": "Twisting kick"
+          },
+          {
+            "id": "tech-4",
+            "word": "SONKKEUTTEULGI",
+            "clue": "Fingertip thrust"
+          },
+          {
+            "id": "tech-5",
+            "word": "DEUNGJUMEOK",
+            "clue": "Back fist strike"
+          },
+          {
+            "id": "tech-6",
+            "word": "BANDALCHAGI",
+            "clue": "Crescent kick"
+          },
+          {
+            "id": "tech-7",
+            "word": "GEOLCHOMAKGI",
+            "clue": "Hooking block"
+          },
+          {
+            "id": "tech-8",
+            "word": "SSANGJUMEOK",
+            "clue": "Twin fist"
+          }
+        ]
+      }
     }
   ]
 }
